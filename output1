@@ -1,0 +1,56 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package a;
+
+class D
+{  
+ final int x=30;
+ D(){
+    super();
+    System.out.println("constructor D");  
+}
+ static {
+         System.out.println("D");
+        }
+ void print(){
+    System.out.println("printD");
+}
+ }
+
+//////////////////
+ class C extends D{
+     public C(){
+    super();
+    System.out.println("constructor C");
+}
+ final int x=20;
+        {
+         System.out.println("C");
+        }
+        @Override
+void print(){
+    System.out.println("printC");
+}        
+ }
+
+//////////////////
+ class B extends C{
+final int x=10;
+D d = new C();
+public B(){super();
+System.out.println("constructor B");
+}
+ }
+
+////////////////////////
+public class A extends B{
+   public static void main(String[] args) {
+        D d = new A();    
+        System.out.println(d.x);
+        d.print();
+    }
+}
+
