@@ -1,0 +1,18 @@
+class S2 {
+void m(S2 obj) {
+System.out. println("method is invoked");
+}
+static{
+System. out.println("static");
+System.out.println("instance");
+}
+void p() {
+m(this);
+}
+public static void main(String args[]) {
+S2 s1 = new S2();
+S2 s2 = new S2 () ;
+s1.p();
+s2.p() ;
+}
+}
