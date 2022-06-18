@@ -4,6 +4,8 @@ System.out. println("method is invoked");
 }
 static{
 System. out.println("static");
+}
+{    
 System.out.println("instance");
 }
 void p() {
