@@ -1,0 +1,85 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package newmain;
+
+/**
+ *
+ * @author aseel
+ */
+class A{
+String str;
+int x;
+A(String s, int x)
+{
+System.out.println("A class");
+this.x=x;
+str=s;
+}
+}
+
+/////////////////
+class B extends A{
+String s;
+{
+    System.out.println("Class B");   
+    System.out.println("Hello");
+}
+B(String s1, String s2, int y)
+{
+super(s1,y);
+s=s2;
+    System.out.println("IT");
+}
+}
+
+////////////////////
+public class NewMain{
+NewMain()
+    {
+    System.out.println("Starting");
+    }
+      public static void main(String[] args) {
+        NewMain nm = new NewMain ();  
+        Object a[] = new Object[2];
+        a[0]=new A("Java",3);
+        a[1]=new B("C++","Pacal",6);
+    }
+}
+
+
+
+
+
+
+
+/*
+
+Starting
+A class
+A class
+Class B
+Hello
+IT
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
